@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Install and uninstall functions for the project_browser_devel module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function project_browser_devel_uninstall(): void {
+  // Disable the random_data source.
+  $admin_settings = \Drupal::configFactory()->getEditable('project_browser.admin_settings');
+  $enabled_sources = $admin_settings->get('enabled_sources');
+  $enabled_sources = array_diff($enabled_sources, ['random_data']);
+  $admin_settings->set('enabled_sources', $enabled_sources)->save();
+}

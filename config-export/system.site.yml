@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: HlN7eAN2N4JIHsYv56V4E7sqC9bS609KwvGFjyD_mgk
+langcode: en
+uuid: c4fe7445-8ae4-46e1-9e31-db97bd3a6bc5
+name: 'H.C. Andersen Samfundet – Odense'
+mail: lb@larsbojensen.eu
+slogan: ''
+page:
+  403: /user/login
+  404: ''
+  front: /node/2
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: null

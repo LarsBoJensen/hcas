@@ -1,0 +1,13 @@
+uuid: 251efcc6-e02d-40d3-9548-3a1236da3e70
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: zbCsOb-PnJ7UJGjpME30HuieR2wlTzU2MmoY6iEeghc
+id: media.3_4_large
+label: '3:4 Large'
+description: ''
+targetEntityType: media
+cache: true

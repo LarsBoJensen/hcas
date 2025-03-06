@@ -1,0 +1,13 @@
+name: Project Browser Devel
+type: module
+description: Provides a Project Browser source plugin that generates random data.
+core_version_requirement: ^10 || ^11
+dependencies:
+  - project_browser:project_browser
+lifecycle: obsolete
+lifecycle_link: https://www.drupal.org/project/project_browser/issues/3509170
+
+# Information added by Drupal.org packaging script on 2025-02-28
+version: '2.0.0-alpha10'
+project: 'project_browser'
+datestamp: 1740765387

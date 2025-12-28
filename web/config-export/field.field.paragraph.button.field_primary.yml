@@ -1,0 +1,23 @@
+uuid: cfe5c909-b40f-4072-a89d-2cc236c3f197
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_primary
+    - paragraphs.paragraphs_type.button
+id: paragraph.button.field_primary
+field_name: field_primary
+entity_type: paragraph
+bundle: button
+label: Fyldt
+description: 'Skal knappen være med lys skrift på sitets baggrundsfarve, eller skal det være en hvid knap med en farvet kant?'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Fyldt
+  off_label: 'Ikke fyldt'
+field_type: boolean

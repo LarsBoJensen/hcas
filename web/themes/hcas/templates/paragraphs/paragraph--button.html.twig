@@ -1,0 +1,20 @@
+{%
+  set classes = [
+    'paragraph',
+    'text-content',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div {{ attributes.addClass(classes) }}>
+    {% block content %}
+      {% if content.field_url.0['#context'].value is defined %}
+        <a {{ attributes.addClass('button', content.field_primary['#items'].value == 1 ? 'button--primary' : 'button--secondary') }} href="{{ content.field_url.0['#context'].value }}">
+          {{ content.field_label }}
+        </a>
+      {% endif %}
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

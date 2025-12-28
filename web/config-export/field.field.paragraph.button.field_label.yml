@@ -1,0 +1,19 @@
+uuid: e48f9f17-aa06-401c-bed0-c42285cbc10b
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_label
+    - paragraphs.paragraphs_type.button
+id: paragraph.button.field_label
+field_name: field_label
+entity_type: paragraph
+bundle: button
+label: Tekst
+description: 'Teksten på knappen'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

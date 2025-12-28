@@ -1,0 +1,26 @@
+uuid: 44e0e4b7-a0e5-4231-8afb-1236d012dd0e
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.button.field_label
+    - field.field.paragraph.button.field_primary
+    - field.field.paragraph.button.field_url
+    - paragraphs.paragraphs_type.button
+id: paragraph.button.preview
+targetEntityType: paragraph
+bundle: button
+mode: preview
+content:
+  field_label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_primary: true
+  field_url: true

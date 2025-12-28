@@ -6,6 +6,7 @@ dependencies:
     - system.menu.account
   module:
     - system
+    - user
   theme:
     - hcas
 _core:
@@ -13,7 +14,7 @@ _core:
 id: hcas_account_menu
 theme: hcas
 region: secondary_menu
-weight: -4
+weight: -6
 provider: null
 plugin: 'system_menu_block:account'
 settings:
@@ -24,4 +25,13 @@ settings:
   level: 1
   depth: 1
   expand_all_items: false
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      content_editor: content_editor
+      administrator: administrator

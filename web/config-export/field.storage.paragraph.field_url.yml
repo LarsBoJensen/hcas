@@ -1,0 +1,21 @@
+uuid: 201abd63-2a2e-4db7-834e-17e9e2e58a03
+langcode: da
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_url
+field_name: field_url
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

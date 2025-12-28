@@ -1,0 +1,31 @@
+.teaser--flex-container {
+  display: flex;
+  gap: var(--sp2);
+  & .teaser__image {
+    flex: none;
+    /* max-width: unset; */
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  & .teaser__title {
+    line-height: normal;
+    margin: 0;
+    margin-block-end: var(--sp1);
+  }
+}
+.teaser-link {
+  text-decoration-color: var(--color--primary-80);
+  text-decoration: none;
+  color: var(--color-text-neutral-loud);
+}
+#mc_embed_signup {
+  h3 {
+    margin: 0 0 var(--sp1);
+  }
+  input {
+    width: 100%;
+  }
+}

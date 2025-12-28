@@ -1,0 +1,13 @@
+uuid: 38a20eb6-1eee-49ba-b730-7c65ef69d66f
+langcode: da
+status: false
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: dTfAUHooYV0uOVPO3saGpgv-c5PppJXDwxvwRTJOycM
+id: media.full
+label: 'Fuldt indhold'
+description: null
+targetEntityType: media
+cache: true

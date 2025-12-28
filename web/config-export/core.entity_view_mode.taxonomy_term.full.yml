@@ -1,0 +1,13 @@
+uuid: 278c5b2c-799f-4463-90af-f3c261ce6a45
+langcode: da
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: iukUENpf8CFvjZbGGacKX_Ges0-lU9z6zvsd32P6kbo
+id: taxonomy_term.full
+label: Termside
+description: ''
+targetEntityType: taxonomy_term
+cache: true

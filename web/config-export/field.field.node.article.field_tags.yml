@@ -1,0 +1,31 @@
+uuid: 9ed2f062-bbe2-4b04-818e-eb02567f46f5
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.article
+    - taxonomy.vocabulary.tags
+_core:
+  default_config_hash: QdUgf_beeoaPiyKorFv0q1fcJpWH_uZTqe_xoVJacrw
+id: node.article.field_tags
+field_name: field_tags
+entity_type: node
+bundle: article
+label: Nøgleord
+description: 'Nøgleord bør have almen karakter. Således ikke "H.C. Andersens fødselsdag i H.C. Andersens Hus 2013", men måske "Museum". Begynd at taste og vent for at se, om nøgleordet allerede er i systemet. Sæt komma mellem ordene, hvis du vil tilføje flere.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: _none
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

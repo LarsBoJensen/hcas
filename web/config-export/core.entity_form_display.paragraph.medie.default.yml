@@ -1,0 +1,29 @@
+uuid: 0a070deb-6d21-4542-a1bc-86424e74fd82
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.medie.field_media_reference
+    - paragraphs.paragraphs_type.medie
+  module:
+    - media_library
+id: paragraph.medie.default
+targetEntityType: paragraph
+bundle: medie
+mode: default
+content:
+  field_media_reference:
+    type: media_library_widget
+    weight: -199
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  layout_paragraphs_fields:
+    weight: -200
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

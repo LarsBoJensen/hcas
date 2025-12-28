@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
+langcode: da
+uuid: 09d690b2-760f-43dc-92af-71ba03da06ac
+name: 'H.C. Andersen Samfundet'
+mail: bestyrelsen@hcandersensamfundet-odense.dk
+slogan: Odense
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: da
+mail_notification: null

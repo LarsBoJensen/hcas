@@ -1,0 +1,22 @@
+uuid: 6a24643a-5d42-47d4-83e5-7b1f18f9c326
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hcas
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: hcas_messages
+theme: hcas
+region: highlighted
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Statusmeddelelser
+  label_display: '0'
+  provider: system
+visibility: {  }

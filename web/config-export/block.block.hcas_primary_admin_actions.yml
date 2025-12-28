@@ -1,0 +1,20 @@
+uuid: fd6eb058-4c08-4793-b21c-ba24a26c81d5
+langcode: da
+status: true
+dependencies:
+  theme:
+    - hcas
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: hcas_primary_admin_actions
+theme: hcas
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primære administratorhandlinger'
+  label_display: '0'
+  provider: core
+visibility: {  }

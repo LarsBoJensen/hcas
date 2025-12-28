@@ -1,0 +1,20 @@
+uuid: c58f6f73-a580-4af6-826a-415d283a7bfd
+langcode: da
+status: true
+dependencies:
+  theme:
+    - hcas
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: hcas_page_title
+theme: hcas
+region: content_above
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Sidetitel
+  label_display: '0'
+  provider: core
+visibility: {  }

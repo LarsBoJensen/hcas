@@ -1,0 +1,24 @@
+uuid: 93b7b327-ee15-4b0d-a33d-62eb1ddc7090
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_block
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.text
+  module:
+    - text
+id: paragraph.text.field_text_block
+field_name: field_text_block
+entity_type: paragraph
+bundle: text
+label: Tekst
+description: Fritekst
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

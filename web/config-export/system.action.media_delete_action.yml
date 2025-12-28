@@ -1,0 +1,13 @@
+uuid: e60db5e8-ab33-4692-92d5-4b1ed5cf93bd
+langcode: da
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: FrZy1tmuXJcOxhXlBoI1Hsnen5TT-9OCC1iolWH84go
+id: media_delete_action
+label: 'Slet medie'
+type: media
+plugin: 'entity:delete_action:media'
+configuration: {  }

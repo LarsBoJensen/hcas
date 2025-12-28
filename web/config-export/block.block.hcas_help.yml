@@ -1,0 +1,22 @@
+uuid: ac795385-59ad-4d7d-8e7d-a43e64847c3e
+langcode: da
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - hcas
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: hcas_help
+theme: hcas
+region: content_above
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Hjælp
+  label_display: '0'
+  provider: help
+visibility: {  }

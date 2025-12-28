@@ -1,0 +1,8 @@
+uuid: 49801f8c-7725-4a3f-a98c-70ec2d29e12c
+langcode: da
+status: true
+dependencies: {  }
+id: blank_block
+label: 'Blank Block'
+revision: true
+description: 'Blok uden noget.'

@@ -1,0 +1,13 @@
+uuid: 146bf05e-5e0f-4270-8de1-8afd23e2e625
+langcode: da
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: i0snV8Wj--OkRW12UdachUiYiz3FbeMwHu_pZYfzKLc
+name: 'Simpel side'
+type: page
+description: 'Brug <em>simple sider</em> til dit statiske indhold, som f.eks. en "om os"-side.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

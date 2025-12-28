@@ -1,0 +1,22 @@
+uuid: eaf430d2-50c0-4867-a65e-e4f24e851775
+langcode: da
+status: true
+dependencies:
+  theme:
+    - hcas
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: hcas_primary_local_tasks
+theme: hcas
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primære faneblade'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

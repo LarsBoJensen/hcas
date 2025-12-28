@@ -1,0 +1,23 @@
+uuid: f9310ab2-192b-460d-b765-12f58359b140
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.blank_block
+    - field.field.block_content.blank_block.field_content
+  module:
+    - text
+id: block_content.blank_block.default
+targetEntityType: block_content
+bundle: blank_block
+mode: default
+content:
+  field_content:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

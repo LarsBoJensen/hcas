@@ -1,0 +1,29 @@
+uuid: 0574e14f-0321-4690-9cbd-9402b6491005
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser_image
+    - media.type.image
+    - node.type.article
+id: node.article.field_teaser_image
+field_name: field_teaser_image
+entity_type: node
+bundle: article
+label: Teaser-billede
+description: 'Vælg et billede, der skal bruges i teasere (forkortede visninger) af denne artikel.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

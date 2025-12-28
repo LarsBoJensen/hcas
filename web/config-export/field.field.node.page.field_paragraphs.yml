@@ -1,0 +1,38 @@
+uuid: 6e05dbf0-116e-4b1d-9790-502c60b7f14d
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.page
+  module:
+    - entity_reference_revisions
+id: node.page.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: page
+label: Indhold
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 1
+    target_bundles_drag_drop:
+      link:
+        weight: -6
+        enabled: false
+      medie:
+        weight: -8
+        enabled: false
+      quote:
+        weight: -7
+        enabled: false
+      text:
+        weight: -9
+        enabled: false
+field_type: entity_reference_revisions

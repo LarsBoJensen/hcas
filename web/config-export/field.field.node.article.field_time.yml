@@ -1,0 +1,21 @@
+uuid: 6097fc22-3d3c-48d3-997b-9866d506d803
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_time
+    - node.type.article
+  module:
+    - datetime
+id: node.article.field_time
+field_name: field_time
+entity_type: node
+bundle: article
+label: Tidspunkt
+description: 'Starttidspunkt. Hvis man ønsker at angive hvor længe arrangementet varer, eller angive flere tidspunkter, for eksempel for en serie af arrangementer, må man skrive det i indholdet.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

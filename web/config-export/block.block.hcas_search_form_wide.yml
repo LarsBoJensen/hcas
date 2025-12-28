@@ -1,0 +1,23 @@
+uuid: 23e054b6-1a86-421c-a8d5-04b4005dc976
+langcode: da
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - hcas
+_core:
+  default_config_hash: pbbed0hdqGDF-_QWVVTWRAwgDIotFuAvWH5mWUZu0fA
+id: hcas_search_form_wide
+theme: hcas
+region: secondary_menu
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Søgeformular (bred)'
+  label_display: '0'
+  provider: search
+  page_id: null
+visibility: {  }

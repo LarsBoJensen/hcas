@@ -1,0 +1,22 @@
+uuid: 415215d1-0712-4676-a705-106f22796e22
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hcas
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: hcas_powered
+theme: hcas
+region: footer_bottom
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Drives af Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

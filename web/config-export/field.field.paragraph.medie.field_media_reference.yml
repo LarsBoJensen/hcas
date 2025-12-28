@@ -1,0 +1,35 @@
+uuid: 4d226099-58a2-4f7e-849c-53a86995ba77
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_reference
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.video
+    - paragraphs.paragraphs_type.medie
+id: paragraph.medie.field_media_reference
+field_name: field_media_reference
+entity_type: paragraph
+bundle: medie
+label: 'Vælg eller tilføj medie'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      document: document
+      audio: audio
+      video: video
+    sort:
+      field: changed
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

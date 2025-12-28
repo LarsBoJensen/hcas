@@ -1,0 +1,24 @@
+uuid: b66a1ddf-c22a-4821-a361-3d2c8c20459d
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.blank_block
+    - field.storage.block_content.field_content
+    - filter.format.full_html
+  module:
+    - text
+id: block_content.blank_block.field_content
+field_name: field_content
+entity_type: block_content
+bundle: blank_block
+label: Indhold
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

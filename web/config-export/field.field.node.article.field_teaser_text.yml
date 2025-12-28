@@ -1,0 +1,19 @@
+uuid: 70d484c1-154e-4036-9b2b-cd5d25f1ee51
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser_text
+    - node.type.article
+id: node.article.field_teaser_text
+field_name: field_teaser_text
+entity_type: node
+bundle: article
+label: Teaser-tekst
+description: 'Teaser-tekst bliver brugt til forkortede visninger af en artikel, for eksempel på forsiden.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

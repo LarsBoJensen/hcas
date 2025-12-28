@@ -1,0 +1,28 @@
+uuid: 556eaf1a-0068-4af2-b6ae-24e8ebb5fc72
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_block
+    - filter.format.basic_html
+    - filter.format.plain_text
+    - filter.format.restricted_html
+    - paragraphs.paragraphs_type.quote
+  module:
+    - text
+id: paragraph.quote.field_text_block
+field_name: field_text_block
+entity_type: paragraph
+bundle: quote
+label: Tekst-blok
+description: 'Citér her'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - plain_text
+field_type: text_long

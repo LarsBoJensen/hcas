@@ -1,0 +1,31 @@
+uuid: 060c4f0e-db5f-405a-b859-f62b4c2cf72f
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.anderseniana.field_paragraphs
+    - node.type.anderseniana
+  module:
+    - layout_paragraphs
+    - user
+id: node.anderseniana.default
+targetEntityType: node
+bundle: anderseniana
+mode: default
+content:
+  field_paragraphs:
+    type: layout_paragraphs
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

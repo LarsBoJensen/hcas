@@ -1,0 +1,17 @@
+uuid: fed84bd8-f706-4b8b-a947-d0d9c2a3e263
+langcode: da
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Anderseniana
+type: anderseniana
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

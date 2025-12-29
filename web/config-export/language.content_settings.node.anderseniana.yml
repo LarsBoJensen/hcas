@@ -1,0 +1,11 @@
+uuid: d64993a6-98bc-4d70-bf03-0c00bca113e8
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.anderseniana
+id: node.anderseniana
+target_entity_type_id: node
+target_bundle: anderseniana
+default_langcode: site_default
+language_alterable: false

@@ -29,3 +29,38 @@
     width: 100%;
   }
 }
+
+h2 {
+    margin-block: var(--sp1);
+}
+
+/* p {
+    margin-block: var(--sp1) !important;
+} */
+
+.wide-content {
+    width: auto !important;
+    margin-inline-start: 0 !important;
+}
+
+/*
+ * Todo: check if this works for 2-column layouts in general
+ */
+
+.layout--twocol, .layout--twocol-bricks {
+    & > .layout__region--first, .layout__region--first-above, .layout__region--first-below {
+        padding-inline-end: 2em;
+    }
+}
+
+.layout__region .field--type-image {
+    margin: 0 !important;
+}
+
+a.button--primary.paragraph--type--button {
+   color: var(--color--white);
+}
+
+.view-content, .contextual-region.view-anderseniana {
+    gap: calc(0.5 * var(--sp1)) !important;
+}

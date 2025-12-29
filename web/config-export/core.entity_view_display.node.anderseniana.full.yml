@@ -5,6 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.anderseniana.field_paragraphs
+    - field.field.node.anderseniana.field_tags
+    - field.field.node.anderseniana.field_teaser_image
+    - field.field.node.anderseniana.field_teaser_text
     - node.type.anderseniana
   module:
     - layout_paragraphs
@@ -23,10 +26,20 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  field_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 100
     region: content
 hidden:
+  field_teaser_image: true
+  field_teaser_text: true
   langcode: true

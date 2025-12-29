@@ -1,0 +1,11 @@
+uuid: 7288b283-50db-4daf-9430-16acf12f2016
+langcode: da
+status: true
+dependencies:
+  module:
+    - redirect
+id: redirect.token
+label: Token
+description: null
+targetEntityType: redirect
+cache: true

@@ -1,0 +1,16 @@
+uuid: 627c9db6-4065-4793-a239-45d5e2946940
+langcode: da
+status: true
+dependencies:
+  module:
+    - pathauto
+  enforced:
+    module:
+      - user
+_core:
+  default_config_hash: 6eiNWATGTd3lUEKuxNPNyDRDVMsUlM0HS90_R6JJLUI
+id: pathauto_update_alias_user
+label: 'Opdatér alternativ URL'
+type: user
+plugin: pathauto_update_alias
+configuration: {  }

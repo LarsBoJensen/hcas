@@ -1,0 +1,31 @@
+uuid: 083fbab1-85a2-4e0c-a1a4-10e2ea4747ec
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:blank_block:c2bc5fc3-877a-4ac5-b718-d9302378f273'
+  module:
+    - block_content
+    - node
+  theme:
+    - hcas
+id: hcas_andersenianalink
+theme: hcas
+region: content
+weight: -6
+provider: null
+plugin: 'block_content:c2bc5fc3-877a-4ac5-b718-d9302378f273'
+settings:
+  id: 'block_content:c2bc5fc3-877a-4ac5-b718-d9302378f273'
+  label: 'Anderseniana link'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      anderseniana: anderseniana

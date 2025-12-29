@@ -23,13 +23,13 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   field_paragraphs:
     type: layout_paragraphs
-    weight: 12
+    weight: 11
     region: content
     settings:
       view_mode: default
@@ -41,7 +41,7 @@ content:
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete_tags
-    weight: 3
+    weight: 2
     region: content
     settings:
       match_operator: CONTAINS
@@ -51,14 +51,14 @@ content:
     third_party_settings: {  }
   field_teaser_image:
     type: media_library_widget
-    weight: 10
+    weight: 9
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
   field_teaser_text:
     type: string_textfield
-    weight: 11
+    weight: 10
     region: content
     settings:
       size: 60
@@ -66,40 +66,33 @@ content:
     third_party_settings: {  }
   field_time:
     type: datetime_default
-    weight: 2
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 1
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   path:
     type: path
-    weight: 8
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 6
+    weight: 5
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 9
+    weight: 8
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 7
+    weight: 6
     region: content
     settings:
       display_label: true
@@ -114,7 +107,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 3
     region: content
     settings:
       match_operator: CONTAINS
@@ -122,4 +115,10 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+  url_redirects:
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

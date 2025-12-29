@@ -1,0 +1,29 @@
+uuid: bb2a80df-8831-43d7-ba0b-588d37c0e390
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.anderseniana
+    - taxonomy.vocabulary.tags
+id: node.anderseniana.field_tags
+field_name: field_tags
+entity_type: node
+bundle: anderseniana
+label: Tags
+description: 'Skriv en kommasepareret liste. F.eks: Amsterdam, Mexico City, "Cleveland, Ohio"'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: _none
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

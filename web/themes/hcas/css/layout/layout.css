@@ -30,8 +30,12 @@
   }
 }
 
-h2 {
-    margin-block: var(--sp1);
+h2, h3, h4, h5 {
+    margin-block: var(--sp1) !important;
+}
+
+p {
+    margin-block: var(--sp1-5) !important;
 }
 
 /* p {

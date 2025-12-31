@@ -12,7 +12,7 @@ dependencies:
 id: hcas_andersenianalink
 theme: hcas
 region: content
-weight: -6
+weight: -7
 provider: null
 plugin: 'block_content:c2bc5fc3-877a-4ac5-b718-d9302378f273'
 settings:

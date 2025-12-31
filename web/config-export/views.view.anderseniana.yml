@@ -304,6 +304,7 @@ display:
       menu:
         type: normal
         title: Anderseniana
+        weight: -46
         menu_name: footer
         parent: ''
     cache_metadata:

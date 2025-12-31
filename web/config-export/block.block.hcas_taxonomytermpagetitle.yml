@@ -1,0 +1,28 @@
+uuid: c5348747-fd59-44eb-891a-47afd66dbcef
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:blank_block:49df80d5-6a0e-4ca7-ad2e-8885f334032b'
+  module:
+    - block_content
+    - system
+  theme:
+    - hcas
+id: hcas_taxonomytermpagetitle
+theme: hcas
+region: content_above
+weight: -7
+provider: null
+plugin: 'block_content:49df80d5-6a0e-4ca7-ad2e-8885f334032b'
+settings:
+  id: 'block_content:49df80d5-6a0e-4ca7-ad2e-8885f334032b'
+  label: 'Emne: [current-page:title]'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/taxonomy/term/*'

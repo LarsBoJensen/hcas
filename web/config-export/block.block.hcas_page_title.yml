@@ -2,6 +2,8 @@ uuid: c58f6f73-a580-4af6-826a-415d283a7bfd
 langcode: da
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - hcas
 _core:
@@ -17,4 +19,8 @@ settings:
   label: Sidetitel
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/taxonomy/term/*'

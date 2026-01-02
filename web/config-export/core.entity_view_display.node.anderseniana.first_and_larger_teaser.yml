@@ -1,0 +1,48 @@
+uuid: a3653f88-a6d9-46e6-987c-a4c0c43bf58c
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.first_and_larger_teaser
+    - field.field.node.anderseniana.field_paragraphs
+    - field.field.node.anderseniana.field_tags
+    - field.field.node.anderseniana.field_teaser_image
+    - field.field.node.anderseniana.field_teaser_text
+    - image.style.large
+    - node.type.anderseniana
+  module:
+    - media
+    - user
+id: node.anderseniana.first_and_larger_teaser
+targetEntityType: node
+bundle: anderseniana
+mode: first_and_larger_teaser
+content:
+  field_teaser_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_teaser_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_paragraphs: true
+  field_tags: true
+  langcode: true

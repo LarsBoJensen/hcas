@@ -3,6 +3,14 @@ langcode: da
 status: true
 dependencies:
   config:
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.anderseniana
     - node.type.article
     - node.type.page
     - taxonomy.vocabulary.tags
@@ -10,8 +18,9 @@ dependencies:
     - comment
     - contextual
     - file
+    - filter
+    - media
     - node
-    - path
     - system
     - taxonomy
     - toolbar
@@ -26,27 +35,73 @@ permissions:
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
+  - 'access media overview'
   - 'access toolbar'
-  - 'administer url aliases'
+  - 'administer media'
+  - 'administer node published status'
+  - 'administer nodes'
+  - 'create anderseniana content'
   - 'create article content'
+  - 'create audio media'
+  - 'create document media'
+  - 'create image media'
+  - 'create media'
   - 'create page content'
+  - 'create remote_video media'
   - 'create terms in tags'
-  - 'create url aliases'
-  - 'delete article revisions'
+  - 'create video media'
+  - 'delete media'
+  - 'delete own anderseniana content'
   - 'delete own article content'
+  - 'delete own audio media'
+  - 'delete own document media'
   - 'delete own files'
+  - 'delete own image media'
   - 'delete own page content'
+  - 'delete own remote_video media'
+  - 'delete own video media'
+  - 'edit any anderseniana content'
   - 'edit any article content'
+  - 'edit any audio media'
+  - 'edit any document media'
+  - 'edit any image media'
   - 'edit any page content'
+  - 'edit any remote_video media'
+  - 'edit any video media'
+  - 'edit own anderseniana content'
   - 'edit own article content'
+  - 'edit own audio media'
   - 'edit own comments'
+  - 'edit own document media'
+  - 'edit own image media'
   - 'edit own page content'
+  - 'edit own remote_video media'
+  - 'edit own video media'
   - 'edit terms in tags'
   - 'revert all revisions'
+  - 'revert anderseniana revisions'
+  - 'revert any audio media revisions'
+  - 'revert any document media revisions'
+  - 'revert any image media revisions'
+  - 'revert any remote_video media revisions'
+  - 'revert any video media revisions'
   - 'revert article revisions'
   - 'revert page revisions'
+  - 'revert term revisions in tags'
+  - 'update any media'
+  - 'update media'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'view all media revisions'
   - 'view all revisions'
+  - 'view anderseniana revisions'
+  - 'view any audio media revisions'
+  - 'view any document media revisions'
+  - 'view any image media revisions'
+  - 'view any remote_video media revisions'
+  - 'view any video media revisions'
   - 'view article revisions'
   - 'view own unpublished content'
+  - 'view own unpublished media'
   - 'view page revisions'
   - 'view the administration theme'

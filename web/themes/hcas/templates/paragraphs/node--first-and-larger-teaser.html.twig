@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * hcas' theme implementation to display a node teaser.
+ */
+#}
+
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+
+<a {{ attributes.addClass('teaser-link') }} href="{{ url }}" rel="bookmark" >
+  <div {{ attributes.addClass(classes, 'teaser', 'teaser--flex-container') }}>
+    <div class="teaser__content">
+      {% if label %}
+        <h2{{ title_attributes.addClass('node__title', 'teaser__title') }}>
+          {{ label }}
+        </h2>
+      {% endif %}
+      <div class="teaser__text">
+        {{ content.field_teaser_text }}
+      </div>
+    </div>
+    <div class="teaser__image">
+      {{ content.field_teaser_image }}
+    </div>
+  </div>
+</a>

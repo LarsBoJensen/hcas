@@ -1,0 +1,28 @@
+uuid: cf98e974-6439-4670-ba8e-6f30fc89d779
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:blank_block:c26e95a9-b125-4637-89cd-f97ed8133929'
+  module:
+    - block_content
+    - system
+  theme:
+    - hcas
+id: hcas_member_signup
+theme: hcas
+region: sidebar
+weight: -9
+provider: null
+plugin: 'block_content:c26e95a9-b125-4637-89cd-f97ed8133929'
+settings:
+  id: 'block_content:c26e95a9-b125-4637-89cd-f97ed8133929'
+  label: 'Sign up'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

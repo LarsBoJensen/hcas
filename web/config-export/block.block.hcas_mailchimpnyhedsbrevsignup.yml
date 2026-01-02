@@ -13,7 +13,7 @@ dependencies:
 id: hcas_mailchimpnyhedsbrevsignup
 theme: hcas
 region: sidebar
-weight: 0
+weight: -8
 provider: null
 plugin: 'block_content:121fcd8b-7647-4bcc-bee9-2897a4ca5488'
 settings:

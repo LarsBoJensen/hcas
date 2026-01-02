@@ -1,6 +1,6 @@
 .teaser--flex-container {
   display: flex;
-  gap: var(--sp2);
+  column-gap: var(--sp2) !important;
   & .teaser__image {
     flex: none;
     /* max-width: unset; */
@@ -12,14 +12,20 @@
   }
   & .teaser__title {
     line-height: normal;
-    margin: 0;
-    margin-block-end: var(--sp1);
+    margin: 0 !important;
+    margin-block-end: var(--sp1) !important;
   }
 }
 .teaser-link {
   text-decoration-color: var(--color--primary-80);
   text-decoration: none;
   color: var(--color-text-neutral-loud);
+  margin-block-end: var(--sp2);
+  transition: box-shadow .2s ease-in-out;
+  box-shadow: none;
+  &:hover {
+    box-shadow: 10px 10px 20px 2px #ddd;
+  }
 }
 #mc_embed_signup {
   h3 {
@@ -27,6 +33,9 @@
   }
   input {
     width: 100%;
+    &::placeholder {
+        text-align: center;
+    }
   }
 }
 
@@ -66,9 +75,52 @@ p {
 }
 
 a.button--primary.paragraph--type--button {
-   color: var(--color--white);
+    height: auto;
+    min-height: var(--sp3);
+    color: var(--color--white);
+    padding: calc(0.5 * var(--sp1)) var(--sp2);
+    #block-hcas-member-signup & {
+        width: 100%;
+        justify-content: center;
+        line-height: normal;
+    }
+}
+
+.paragraph--type--medie {
+    margin-block: var(--sp0-5) !important;
+    a {
+        font-weight: bold;
+    }
 }
 
 .view-content, .contextual-region.view-anderseniana {
     gap: calc(0.5 * var(--sp1)) !important;
+}
+
+#block-hcas-taxonomytermpagetitle {
+    margin: 0 !important;
+    .block__title {
+        color: var(--color-text-neutral-medium);
+        font-size: 1.5rem;
+        line-height: var(--sp);
+    }
+}
+
+#block-hcas-frontpage-heading {
+    margin: 0;
+}
+
+@media (min-width: 75rem) {
+    #block-hcas-site-branding {
+        /* min-height: var(--site-header-height-wide); */
+        flex: 4;
+    }
+    #header-nav {
+        flex: 1;
+    }
+}
+/* old site theme base color: #cf7618 */
+/* new color: #e68d2d, #ea9234, #e58f34 */
+.little-spacing {
+    margin-block: var(--sp0-5);
 }

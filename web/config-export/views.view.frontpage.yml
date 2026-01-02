@@ -3,8 +3,11 @@ langcode: da
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.first_and_larger_teaser
     - core.entity_view_mode.node.rss
     - core.entity_view_mode.node.teaser
+  content:
+    - 'node:page:7c684fe4-56ae-4d6e-97f5-5c3f0e59bb81'
   module:
     - node
     - user
@@ -29,7 +32,7 @@ display:
       pager:
         type: full
         options:
-          offset: 0
+          offset: 1
           pagination_heading_level: h4
           items_per_page: 10
           total_pages: 0
@@ -239,6 +242,7 @@ display:
       row:
         type: 'entity:node'
         options:
+          relationship: none
           view_mode: teaser
       query:
         type: views_query
@@ -249,7 +253,12 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      header: {  }
+      header:
+        entity_node:
+          id: entity_node
+          table: views
+          field: entity_node
+          plugin_id: entity
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -257,6 +266,42 @@ display:
       contexts:
         - 'languages:language_interface'
         - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  attachment_1:
+    id: attachment_1
+    display_title: Bilag
+    display_plugin: attachment
+    position: 3
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 1
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: first_and_larger_teaser
+      defaults:
+        style: false
+        row: false
+      display_extenders: {  }
+      displays:
+        page_1: page_1
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -301,13 +346,34 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      pager:
+        type: some
+        options:
+          offset: 1
+          items_per_page: 3
+      defaults:
+        pager: false
+        header: false
+      header:
+        entity_node:
+          id: entity_node
+          table: views
+          field: entity_node
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: entity
+          empty: true
+          target: 7c684fe4-56ae-4d6e-97f5-5c3f0e59bb81
+          view_mode: full
+          tokenize: true
+          bypass_access: false
       display_extenders: {  }
       path: node
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }

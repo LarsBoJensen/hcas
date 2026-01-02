@@ -2,11 +2,8 @@ uuid: 317ce4b5-0f6a-4806-820e-8b1724a20431
 langcode: da
 status: true
 dependencies:
-  config:
-    - filter.format.restricted_html
   module:
     - comment
-    - filter
     - media
     - search
     - system
@@ -20,5 +17,4 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'search content'
-  - 'use text format restricted_html'
   - 'view media'

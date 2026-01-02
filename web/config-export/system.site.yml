@@ -6,7 +6,7 @@ name: 'H.C. Andersen Samfundet'
 mail: bestyrelsen@hcandersensamfundet-odense.dk
 slogan: Odense
 page:
-  403: ''
+  403: /user/login
   404: /node/3
   front: /node
 admin_compact_mode: false

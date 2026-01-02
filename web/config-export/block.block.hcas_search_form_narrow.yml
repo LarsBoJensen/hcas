@@ -17,7 +17,7 @@ plugin: search_form_block
 settings:
   id: search_form_block
   label: 'Søgeformular (smal)'
-  label_display: '0'
+  label_display: visible
   provider: search
   page_id: null
 visibility: {  }

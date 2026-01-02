@@ -1,0 +1,11 @@
+uuid: 72afd39e-7c4c-4f71-ba64-ba751698de0e
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: node.first_and_larger_teaser
+label: 'Første og større smagsprøve'
+description: 'Denne view mode er beregnet til særligt udseende for den første af en slags indhold i en liste'
+targetEntityType: node
+cache: true

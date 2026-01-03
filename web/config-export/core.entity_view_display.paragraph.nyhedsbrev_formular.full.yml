@@ -1,0 +1,22 @@
+uuid: 1d8f494f-9e9d-405d-903c-f3481681e768
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.nyhedsbrev_formular.field_label
+    - paragraphs.paragraphs_type.nyhedsbrev_formular
+id: paragraph.nyhedsbrev_formular.full
+targetEntityType: paragraph
+bundle: nyhedsbrev_formular
+mode: full
+content:
+  field_label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

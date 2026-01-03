@@ -1,0 +1,23 @@
+uuid: 31e28fac-a095-4f42-b267-a1fd8e300b4b
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.nyhedsbrev_formular.field_label
+    - paragraphs.paragraphs_type.nyhedsbrev_formular
+id: paragraph.nyhedsbrev_formular.default
+targetEntityType: paragraph
+bundle: nyhedsbrev_formular
+mode: default
+content:
+  field_label:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

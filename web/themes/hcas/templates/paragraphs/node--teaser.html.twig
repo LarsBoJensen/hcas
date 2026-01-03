@@ -18,9 +18,11 @@
 
 <a {{ attributes.addClass('teaser-link') }} href="{{ url }}" rel="bookmark" >
   <div {{ attributes.addClass(classes, 'teaser', 'teaser--flex-container') }}>
-    <div class="teaser__image">
-      {{ content.field_teaser_image }}
-    </div>
+    {% if content.field_teaser_image.0 %}
+      <div class="teaser__image">
+        {{ content.field_teaser_image }}
+      </div>
+    {% endif %}
     <div class="teaser__content">
       {% if label %}
         <h2{{ title_attributes.addClass('node__title', 'teaser__title') }}>

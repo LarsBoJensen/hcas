@@ -1,0 +1,22 @@
+uuid: 04528c48-469f-41f7-84be-468199cd56f2
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.large_teaser.field_node_reference
+    - paragraphs.paragraphs_type.large_teaser
+id: paragraph.large_teaser.default
+targetEntityType: paragraph
+bundle: large_teaser
+mode: default
+content:
+  field_node_reference:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: first_and_larger_teaser
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

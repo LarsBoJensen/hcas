@@ -1,0 +1,42 @@
+uuid: b9576006-d702-4777-9c55-91770514e35a
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.button.field_label
+    - field.field.paragraph.button.field_primary
+    - field.field.paragraph.button.field_url
+    - paragraphs.paragraphs_type.button
+id: paragraph.button.full
+targetEntityType: paragraph
+bundle: button
+mode: full
+content:
+  field_label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_primary:
+    type: boolean
+    label: hidden
+    settings:
+      format: true-false
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_url:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

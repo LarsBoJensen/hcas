@@ -1,0 +1,21 @@
+uuid: 1f25baa7-1f7e-44c9-a20e-50238d632508
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_label
+    - paragraphs.paragraphs_type.nyhedsbrev_formular
+id: paragraph.nyhedsbrev_formular.field_label
+field_name: field_label
+entity_type: paragraph
+bundle: nyhedsbrev_formular
+label: Navn
+description: 'Navnet på formularen'
+required: true
+translatable: false
+default_value:
+  -
+    value: 'Nyhedsbrev formular'
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -11,7 +11,7 @@ dependencies:
     - hcas
 id: hcas_member_signup
 theme: hcas
-region: sidebar
+region: footer_top
 weight: -9
 provider: null
 plugin: 'block_content:c26e95a9-b125-4637-89cd-f97ed8133929'

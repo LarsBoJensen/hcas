@@ -1,0 +1,25 @@
+uuid: 1f1311c6-72a8-4f87-95b4-52b6ffede0dc
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.large_teaser.field_node_reference
+    - paragraphs.paragraphs_type.large_teaser
+id: paragraph.large_teaser.default
+targetEntityType: paragraph
+bundle: large_teaser
+mode: default
+content:
+  field_node_reference:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

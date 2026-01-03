@@ -1,0 +1,22 @@
+uuid: 73e6dd62-cb64-40de-81ad-8660c3aae71d
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.teaser.field_node_reference
+    - paragraphs.paragraphs_type.teaser
+id: paragraph.teaser.default
+targetEntityType: paragraph
+bundle: teaser
+mode: default
+content:
+  field_node_reference:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

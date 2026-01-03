@@ -1,0 +1,11 @@
+uuid: de67ad5b-7090-4c32-81c0-a8ec65fa208e
+langcode: da
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.full
+label: 'Fuldt indhold'
+description: null
+targetEntityType: paragraph
+cache: true

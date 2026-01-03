@@ -1,15 +1,13 @@
-
 blockquote::after {
     content: none !important;
 }
+
 .teaser--flex-container {
     display: flex;
     flex-direction: column;
-    /* column-gap: var(--sp2) !important; */
     & .teaser__image {
         flex: none;
         margin-block-end: var(--sp2);
-        /* max-width: unset; */
         &.image-right {
             margin-block-end: 0;
             margin-block-start: var(--sp2);
@@ -26,6 +24,7 @@ blockquote::after {
         margin-block-end: var(--sp1) !important;
     }
 }
+
 @container (width > 375px) {
     .node--view-mode-teaser {
       /* column-gap: var(--sp2) !important; */
@@ -71,6 +70,7 @@ a.teaser-link {
         opacity: 0.85;
     }
 }
+
 #mc_embed_signup {
   h3 {
     margin: 0 0 var(--sp1);
@@ -83,10 +83,6 @@ a.teaser-link {
   }
 }
 
-/* #block-hcas-page-title {
-    margin-block-end: var(--sp1) !important;
-} */
-
 h2, h3, h4, h5 {
     margin-block: var(--sp1) !important;
 }
@@ -95,25 +91,59 @@ p {
     margin-block: var(--sp1-5) !important;
 }
 
-/* p {
-    margin-block: var(--sp1) !important;
-} */
-
 .wide-content {
     width: auto !important;
     margin-inline-start: 0 !important;
 }
 
-/*
- * Todo: check if this works for 2-column layouts in general
- */
-/* .layout--twocol, .layout--twocol-bricks, .layout--threecol-25-50-25, .layout--threecol-33-34-33,  */
 .paragraph--type--two-columns {
     & .layout__region--third {
         padding-inline-start: 0em;
     }
 }
 
+.layout__region .field--type-image {
+    margin: 0 !important;
+}
+
+.paragraph--type--button {
+    text-align: center;
+}
+
+a.button--primary.paragraph--type--button {
+    height: auto;
+    min-height: var(--sp3);
+    color: var(--color--white);
+    padding: calc(0.5 * var(--sp1)) var(--sp3);
+    margin: 0;
+}
+
+.paragraph--type--medie {
+    margin-block: var(--sp0-5) !important;
+    a {
+        font-weight: bold;
+    }
+}
+
+.view-content, .contextual-region.view-anderseniana {
+    gap: calc(0.5 * var(--sp1)) !important;
+}
+
+#block-hcas-taxonomytermpagetitle {
+    margin: 0 !important;
+    .block__title {
+        color: var(--color-text-neutral-medium);
+        font-size: 1.5rem;
+        line-height: var(--sp);
+    }
+}
+
+#block-hcas-andersenianalink {
+    margin: 0;
+    h3 {
+        margin-block-start: 0 !important;
+    }
+}
 
 @media (min-width: 40rem) {
     .paragraph--type--two-columns {
@@ -137,61 +167,8 @@ p {
     }
 }
 
-.layout__region .field--type-image {
-    margin: 0 !important;
-}
-
-.paragraph--type--button {
-    text-align: center;
-}
-
-a.button--primary.paragraph--type--button {
-    height: auto;
-    min-height: var(--sp3);
-    color: var(--color--white);
-    padding: calc(0.5 * var(--sp1)) var(--sp3);
-    margin: 0;
-    /* #block-hcas-member-signup & {
-        width: 100%;
-        justify-content: center;
-        line-height: normal;
-    } */
-}
-
-.paragraph--type--medie {
-    margin-block: var(--sp0-5) !important;
-    a {
-        font-weight: bold;
-    }
-}
-
-.view-content, .contextual-region.view-anderseniana {
-    gap: calc(0.5 * var(--sp1)) !important;
-}
-
-#block-hcas-taxonomytermpagetitle {
-    margin: 0 !important;
-    .block__title {
-        color: var(--color-text-neutral-medium);
-        font-size: 1.5rem;
-        line-height: var(--sp);
-    }
-}
-
-#block-hcas-frontpage-heading {
-    margin: 0;
-}
-
-#block-hcas-andersenianalink {
-    margin: 0;
-    h3 {
-        margin-block-start: 0 !important;
-    }
-}
-
 @media (min-width: 75rem) {
     #block-hcas-site-branding {
-        /* min-height: var(--site-header-height-wide); */
         flex: 4;
         padding-inline-end: calc(23 * var(--sp1));
     }
@@ -204,8 +181,6 @@ a.button--primary.paragraph--type--button {
         }
     }
 }
+
 /* old site theme base color: #cf7618 */
 /* new color: #e68d2d, #ea9234, #e58f34 */
-.little-spacing {
-    margin-block: var(--sp0-5);
-}

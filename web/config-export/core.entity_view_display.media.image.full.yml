@@ -21,7 +21,7 @@ content:
     label: visually_hidden
     settings:
       responsive_image_style: wide
-      image_link: file
+      image_link: ''
       image_loading:
         attribute: lazy
     third_party_settings: {  }

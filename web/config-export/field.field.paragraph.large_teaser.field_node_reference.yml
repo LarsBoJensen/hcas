@@ -6,7 +6,6 @@ dependencies:
     - field.storage.paragraph.field_node_reference
     - node.type.anderseniana
     - node.type.article
-    - node.type.page
     - paragraphs.paragraphs_type.large_teaser
 id: paragraph.large_teaser.field_node_reference
 field_name: field_node_reference
@@ -24,7 +23,6 @@ settings:
     target_bundles:
       anderseniana: anderseniana
       article: article
-      page: page
     sort:
       field: _none
       direction: ASC

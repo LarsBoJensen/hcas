@@ -12,7 +12,7 @@ _core:
 id: hcas_help
 theme: hcas
 region: content_above
-weight: -6
+weight: -5
 provider: null
 plugin: help_block
 settings:

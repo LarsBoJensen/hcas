@@ -11,7 +11,7 @@ dependencies:
 id: hcas_sidefod
 theme: hcas
 region: footer_bottom
-weight: 0
+weight: -8
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

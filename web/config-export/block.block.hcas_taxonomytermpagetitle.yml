@@ -12,7 +12,7 @@ dependencies:
 id: hcas_taxonomytermpagetitle
 theme: hcas
 region: content_above
-weight: -7
+weight: -6
 provider: null
 plugin: 'block_content:49df80d5-6a0e-4ca7-ad2e-8885f334032b'
 settings:

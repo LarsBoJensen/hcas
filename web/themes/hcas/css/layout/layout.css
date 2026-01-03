@@ -68,7 +68,7 @@ a.teaser-link {
     opacity: 1;
     &:hover {
     /* box-shadow: 8px 8px 20px 8px #e9e9e9; */
-        opacity: 0.9;
+        opacity: 0.85;
     }
 }
 #mc_embed_signup {
@@ -108,10 +108,31 @@ p {
  * Todo: check if this works for 2-column layouts in general
  */
 /* .layout--twocol, .layout--twocol-bricks, .layout--threecol-25-50-25, .layout--threecol-33-34-33,  */
+.paragraph--type--two-columns {
+    & .layout__region--third {
+        padding-inline-start: 0em;
+    }
+}
+
+
 @media (min-width: 40rem) {
     .paragraph--type--two-columns {
-        & .layout__region--first, .layout__region--first-above, .layout__region--first-below, .layout__region--second {
-            padding-inline-end: 2em;
+        & .layout__region--first, .layout__region--first-above, .layout__region--first-below {
+            padding-inline-end: var(--sp1);
+        }
+        & .layout__region--second, .layout__region--second-above, .layout__region--second-below {
+            padding-inline-start: var(--sp1);
+        }
+    }
+    .layout--threecol-25-50-25, .layout--threecol-33-34-33 {
+        & .layout__region--first {
+            padding-inline-end: var(--sp1);
+        }
+        & .layout__region--second {
+            padding-inline: var(--sp1);
+        }
+        & .layout__region--third {
+            padding-inline-start: var(--sp1);
         }
     }
 }
@@ -128,7 +149,7 @@ a.button--primary.paragraph--type--button {
     height: auto;
     min-height: var(--sp3);
     color: var(--color--white);
-    padding: calc(0.5 * var(--sp1)) var(--sp2);
+    padding: calc(0.5 * var(--sp1)) var(--sp3);
     margin: 0;
     /* #block-hcas-member-signup & {
         width: 100%;
@@ -161,13 +182,26 @@ a.button--primary.paragraph--type--button {
     margin: 0;
 }
 
+#block-hcas-andersenianalink {
+    margin: 0;
+    h3 {
+        margin-block-start: 0 !important;
+    }
+}
+
 @media (min-width: 75rem) {
     #block-hcas-site-branding {
         /* min-height: var(--site-header-height-wide); */
         flex: 4;
+        padding-inline-end: calc(23 * var(--sp1));
     }
     #header-nav {
         flex: 1;
+    }
+    .paragraph--type--two-columns {
+        & .layout__region--third {
+            padding-inline-start: 2em;
+        }
     }
 }
 /* old site theme base color: #cf7618 */

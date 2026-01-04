@@ -1,15 +1,16 @@
-uuid: f84075b8-fdd2-43d6-92ff-14fda434fef0
+uuid: 000fb8e6-4293-4abf-a269-1b982699bf70
 langcode: da
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.full
     - field.field.paragraph.medie.field_media_reference
     - field.field.paragraph.medie.field_node_reference
     - paragraphs.paragraphs_type.medie
-id: paragraph.medie.default
+id: paragraph.medie.full
 targetEntityType: paragraph
 bundle: medie
-mode: default
+mode: full
 content:
   field_media_reference:
     type: entity_reference_entity_view
@@ -22,9 +23,9 @@ content:
     region: content
   field_node_reference:
     type: entity_reference_label
-    label: inline
+    label: hidden
     settings:
-      link: false
+      link: true
     third_party_settings: {  }
     weight: 0
     region: content

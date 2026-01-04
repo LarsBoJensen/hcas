@@ -9,7 +9,7 @@ dependencies:
     - field.field.node.article.field_teaser_image
     - field.field.node.article.field_teaser_text
     - field.field.node.article.field_time
-    - image.style.thumbnail
+    - image.style.max_325x325
     - node.type.article
   module:
     - media
@@ -26,7 +26,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: thumbnail
+      image_style: max_325x325
       image_loading:
         attribute: lazy
     third_party_settings: {  }

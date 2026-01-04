@@ -1,0 +1,22 @@
+{%
+  set classes = [
+    'paragraph',
+    'text-content',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div {{ attributes.addClass(classes) }}>
+    {% block content %}
+      {% if content.field_node_reference.0 %}
+        <a href="{{ content.field_node_reference.0['#url'] }}">
+          {{ content.field_media_reference }}
+        </a>
+      {% else %}
+        {{ content.field_media_reference }}
+      {% endif %}
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

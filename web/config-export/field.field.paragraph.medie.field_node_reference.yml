@@ -1,0 +1,33 @@
+uuid: 362d4800-74da-4ff9-8d8e-6435916fd15a
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_node_reference
+    - node.type.anderseniana
+    - node.type.article
+    - node.type.page
+    - paragraphs.paragraphs_type.medie
+id: paragraph.medie.field_node_reference
+field_name: field_node_reference
+entity_type: paragraph
+bundle: medie
+label: 'Internt link'
+description: 'Vælg indhold, billedet/mediet skal linke til'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      anderseniana: anderseniana
+      article: article
+      page: page
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: anderseniana
+field_type: entity_reference

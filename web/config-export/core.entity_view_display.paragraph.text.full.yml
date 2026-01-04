@@ -1,25 +1,26 @@
-uuid: c3fe4d4a-9c5a-4fa4-8164-9dd29bdb94d6
+uuid: c461c23b-925e-497f-90c7-b7a67b3be3bc
 langcode: da
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.full
     - field.field.paragraph.text.field_node_reference
     - field.field.paragraph.text.field_text_block
     - paragraphs.paragraphs_type.text
   module:
     - text
-id: paragraph.text.default
+id: paragraph.text.full
 targetEntityType: paragraph
 bundle: text
-mode: default
+mode: full
 content:
   field_node_reference:
     type: entity_reference_label
-    label: inline
+    label: hidden
     settings:
-      link: false
+      link: true
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_text_block:
     type: text_default

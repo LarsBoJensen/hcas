@@ -1,0 +1,11 @@
+uuid: cf474a62-92d2-44e5-bbbc-fb913793b19c
+langcode: da
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.quote
+id: paragraph.quote
+target_entity_type_id: paragraph
+target_bundle: quote
+default_langcode: site_default
+language_alterable: false

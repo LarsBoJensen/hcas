@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.button.field_alignment
+    - field.field.paragraph.button.field_fullwidth
     - field.field.paragraph.button.field_label
     - field.field.paragraph.button.field_primary
     - field.field.paragraph.button.field_url
@@ -22,5 +24,7 @@ content:
     weight: 0
     region: content
 hidden:
+  field_alignment: true
+  field_fullwidth: true
   field_primary: true
   field_url: true

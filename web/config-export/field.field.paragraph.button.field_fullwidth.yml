@@ -1,0 +1,21 @@
+uuid: cae592d3-851f-4bb9-b69c-01d6375d8211
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fullwidth
+    - paragraphs.paragraphs_type.button
+id: paragraph.button.field_fullwidth
+field_name: field_fullwidth
+entity_type: paragraph
+bundle: button
+label: 'Fuld bredde'
+description: 'Optag hele den tilgængelige plads i bredden.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Ja
+  off_label: Nej
+field_type: boolean

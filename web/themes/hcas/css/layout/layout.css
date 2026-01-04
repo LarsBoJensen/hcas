@@ -107,15 +107,29 @@ p {
 }
 
 .paragraph--type--button {
-    text-align: center;
+    & .button {
+        height: auto;
+        min-height: var(--sp3);
+        padding: calc(0.5 * var(--sp1)) var(--sp3);
+        margin: 0;
+    }
 }
 
-a.button--primary.paragraph--type--button {
-    height: auto;
-    min-height: var(--sp3);
-    color: var(--color--white);
-    padding: calc(0.5 * var(--sp1)) var(--sp3);
-    margin: 0;
+
+.align--left {
+    text-align: start;
+}
+.align--right {
+    text-align: end;
+}
+.align--center {
+    text-align: center;
+}
+.fullwidth {
+    width: 100%;
+    margin-inline: 0;
+    text-align: center;
+    justify-content: center;
 }
 
 .paragraph--type--medie {

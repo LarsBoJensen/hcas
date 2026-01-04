@@ -6,7 +6,6 @@ dependencies:
     - 'block_content:blank_block:c26e95a9-b125-4637-89cd-f97ed8133929'
   module:
     - block_content
-    - system
   theme:
     - hcas
 id: hcas_member_signup
@@ -21,8 +20,4 @@ settings:
   label_display: '0'
   provider: block_content
   view_mode: full
-visibility:
-  request_path:
-    id: request_path
-    negate: false
-    pages: '<front>'
+visibility: {  }

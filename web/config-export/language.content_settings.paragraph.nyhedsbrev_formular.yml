@@ -1,0 +1,11 @@
+uuid: 832eeca5-97f5-417a-847b-5bb7de296d28
+langcode: da
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.nyhedsbrev_formular
+id: paragraph.nyhedsbrev_formular
+target_entity_type_id: paragraph
+target_bundle: nyhedsbrev_formular
+default_langcode: site_default
+language_alterable: false

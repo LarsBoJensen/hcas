@@ -1,0 +1,11 @@
+uuid: 52d5d4f4-dea9-4556-b243-460da5da8dd8
+langcode: da
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.medie
+id: paragraph.medie
+target_entity_type_id: paragraph
+target_bundle: medie
+default_langcode: site_default
+language_alterable: false

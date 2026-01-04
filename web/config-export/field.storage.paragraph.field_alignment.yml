@@ -1,0 +1,30 @@
+uuid: 6915ca6c-3a0a-4eef-a934-0d81ad2d6c2b
+langcode: da
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_alignment
+field_name: field_alignment
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: left
+      label: venstre
+    -
+      value: right
+      label: højre
+    -
+      value: center
+      label: centreret
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

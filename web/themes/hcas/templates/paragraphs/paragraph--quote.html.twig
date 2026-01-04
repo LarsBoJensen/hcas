@@ -15,14 +15,9 @@
 {% block paragraph %}
   <div {{ attributes.addClass(classes) }}>
     {% block content %}
-      {#Custom template rendering {{ paragraph.bundle }} paragraph type.#}
-      {# Renders the text field. #}
       <blockquote>
-      {{ content.field_text_block }}
+        {{ content.field_text_block }}
       </blockquote>
-      {# Notice the following; irrelevant for this 1-col layout, but otherwise renders paragraph regions (if it has columns)#}
-      {# Renders the regions (require for section paragraphs) #}
-      {#{ dump(content.regions) }#}
     {% endblock %}
   </div>
 {% endblock paragraph %}

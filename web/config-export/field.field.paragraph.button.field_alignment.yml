@@ -1,0 +1,23 @@
+uuid: f086e3b5-4a61-4e41-89f6-1228f60ee4dc
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_alignment
+    - paragraphs.paragraphs_type.button
+  module:
+    - options
+id: paragraph.button.field_alignment
+field_name: field_alignment
+entity_type: paragraph
+bundle: button
+label: Justering
+description: 'Om knappen skal være venstre- eller højrestillet eller centreret.'
+required: true
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

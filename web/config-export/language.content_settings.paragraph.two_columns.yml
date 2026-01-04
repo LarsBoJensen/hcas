@@ -1,0 +1,11 @@
+uuid: 3d185ad5-e283-47f6-bc86-aa28dfe3eaa2
+langcode: da
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.two_columns
+id: paragraph.two_columns
+target_entity_type_id: paragraph
+target_bundle: two_columns
+default_langcode: site_default
+language_alterable: false

@@ -3,23 +3,60 @@ langcode: da
 status: true
 dependencies:
   config:
+    - field.field.paragraph.button.field_alignment
+    - field.field.paragraph.button.field_fullwidth
     - field.field.paragraph.button.field_label
     - field.field.paragraph.button.field_primary
     - field.field.paragraph.button.field_url
     - paragraphs.paragraphs_type.button
+  module:
+    - options
 id: paragraph.button.default
 targetEntityType: paragraph
 bundle: button
 mode: default
 content:
+  field_alignment:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_fullwidth:
+    type: boolean
+    label: inline
+    settings:
+      format: unicode-yes-no
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
   field_label:
     type: string
-    label: hidden
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     weight: 0
     region: content
-hidden:
-  field_primary: true
-  field_url: true
+  field_primary:
+    type: boolean
+    label: inline
+    settings:
+      format: unicode-yes-no
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_url:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }
